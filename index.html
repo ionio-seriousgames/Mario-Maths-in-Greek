@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <meta charset="UTF-8"/>
+    <title>Tutorial</title>
+    <script src = "phaser.js"></script>
+    
+    <script src = "Boot.js"></script>
+    
+    <script src = "Preloader.js"></script>
+    
+    <script src = "MainMenu.js"></script>
+    
+    <script src = "Level1.js"></script>
+    
+     <script src = "controls.js"></script>
+    
+    <script src = "gameover.js"></script>
+    
+    <script src = "loss.js"></script>
+    
+    <script src = "afigisi.js"></script>
+    
+    <script src = "lathos.js"></script>
+    
+    
+    <body>
+    
+    <script type = "text/javascript">
+        window.onload = function(){
+            
+            var game = new Phaser.Game(1300,800,Phaser.CANVAS,'');
+            
+           
+            
+            game.state.add('Boot',Game.Boot);
+            game.state.add('Preloader',Game.Preloader);
+            game.state.add('MainMenu',Game.MainMenu);
+            game.state.add('Level1',Game.Level1);
+            game.state.add('controls',Game.controls);
+             game.state.add('gameover',Game.gameover);
+            game.state.add('loss',Game.loss);
+            game.state.add('afigisi',Game.afigisi);
+            game.state.add('lathos',Game.lathos);
+            
+            game.state.start('Boot');
+        
+        };
+        
+        </script>
+    
+    </body>
+    
+</html>    
